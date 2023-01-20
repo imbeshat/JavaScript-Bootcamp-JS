@@ -54,3 +54,5 @@ String.prototype.truelength = function () {
 	//console.log(`${this.name}`);
 	console.log(`true length is: ${this.trim().length}`); //this keyword will give the context, the access of where it is running, on variable or directly on the string
 };
+
+// this always targets to whoever is calling it. Eg- in yourname.truelength() this will target to yourname
