@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+	</head>
+	<body>
+		<h1>Hello Javascript Bootcampt</h1>
+		<ul></ul>
+		<button onclick="getAge()" id="fsjs2">Submit</button>
+		<p id="js"></p>
+		<script>
+			// insert inner HTML
+			const ul = document.querySelector("ul");
+			ul.innerHTML = `
+            <li>JS</li>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>React</li>
+        `;
+
+			// Create Element on Screen
+			let title = document.createElement("h1");
+			title.className = "title";
+			title.style.fontSize = "25px";
+			title.style.color = "green";
+			title.textContent = "Creating New Element in DOM";
+			console.log(title);
+			document.body.appendChild(title);
+
+			let title2 = document.createElement("h1");
+			title2.className = "title2";
+			title2.style.fontSize = "20px";
+			title2.style.color = "blue";
+			title2.textContent = "Creating 2nd Element in DOM";
+			document.body.appendChild(title2);
+
+			let title3 = document.createElement("h3");
+			title3.className = "title3";
+			title3.textContent = "Creating 3nd Element in DOM";
+			document.body.appendChild(title3);
+
+			// Remove Child
+			document.body.removeChild(title3);
+
+			// For loop
+			for (let i = 0; i < 3; i++) {
+				let para = document.createElement("p");
+				para.className = "FSJS";
+				para.style.fontSize = "16px";
+				console.log(para);
+				para.textContent = `Para: ${i + 1}`;
+				document.body.appendChild(para);
+			}
+			function getAge() {
+				let age = prompt("Enter your age");
+				if (age >= 18) {
+					document.getElementById("js").innerText = "Success! You can drive";
+					document.getElementById("fsjs2").style.backgroundColor = "Green";
+					document.body.removeChild(title2); // removing the element
+				} else {
+					document.getElementById("js").innerText = "Fail! You can't drive";
+					document.getElementById("fsjs2").style.backgroundColor = "Red";
+				}
+			}
+		</script>
+	</body>
+</html>
