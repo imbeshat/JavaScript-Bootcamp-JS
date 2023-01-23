@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Event Listener</title>
+		<style>
+			body {
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				align-items: center;
+			}
+			p {
+				height: 500px;
+				width: 600px;
+				background-color: #414141;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				font-size: 30px;
+				color: bisque;
+			}
+			#btn {
+				padding: 10px 30px;
+				color: aliceblue;
+				background-color: rgb(58, 58, 171);
+				font-size: 18px;
+				border: none;
+				border-radius: 8px;
+			}
+		</style>
+	</head>
+	<body>
+		<h1>Learning Event Listner</h1>
+		<p id="js">Event Listner</p>
+		<button id="btn">Try</button>
+		<script>
+			// Click
+			document.addEventListener("click", clcik);
+			function clcik() {
+				document.getElementById("js").innerText = " Mouse Clicked";
+			}
+
+			// dblclick
+			document.addEventListener("dblclick", dblclick);
+			function dblclick() {
+				document.getElementById("js").innerText = " Mouse double clicked";
+			}
+			/*
+            - 
+            - 
+            - 
+            - 
+            - 
+            - input
+            - keydown
+            - keyup
+            - keypress
+            - onload
+            */
+			// mouseeneter
+			document.addEventListener("mouseenter", mouseenter);
+			function mouseenter() {
+				document.getElementById("js").innerText = "Mouse Entered";
+			}
+
+			// mouseleave
+			document.addEventListener("mouseleave", mouseleave);
+			function mouseleave() {
+				document.getElementById("js").innerText = "Mouse Leave";
+			}
+
+			// moveover
+			document.addEventListener("mouseover", mouseover);
+			function mouseover() {
+				document.getElementById("js").innerText = "Mouse Over   ";
+			}
+		</script>
+	</body>
+</html>
