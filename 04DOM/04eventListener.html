@@ -45,22 +45,19 @@
 			}
 
 			// dblclick
-			document.addEventListener("dblclick", dblclick);
-			function dblclick() {
+			document.addEventListener("dblclick", (dblclick) => {
 				document.getElementById("js").innerText = " Mouse double clicked";
-			}
+			});
+
+			// input
+
 			/*
-            - 
-            - 
-            - 
-            - 
-            - 
-            - input
-            - keydown
-            - keyup
-            - keypress
-            - onload
-            */
+			         -
+			         - keydown
+			         - keyup
+			         - keypress
+			         - onload
+			         */
 			// mouseeneter
 			document.addEventListener("mouseenter", mouseenter);
 			function mouseenter() {
