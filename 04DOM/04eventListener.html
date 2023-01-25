@@ -58,9 +58,14 @@
 			document.addEventListener("input", (input) => {
 				document.getElementById("inputPara").innerText = "Input value changed";
 			});
+
+			// keydown
+			document.addEventListener("keydown", (keydown) => {
+				document.getElementById("name").style.backgroundColor = "cyan";
+			});
 			/*
 			         -
-			         - keydown
+			         - 
 			         - keyup
 			         - keypress
 			         - onload
