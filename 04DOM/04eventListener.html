@@ -7,23 +7,24 @@
 		<title>Event Listener</title>
 		<style>
 			body {
-				height: 90vh;
+				height: 80vh;
 				display: flex;
 				flex-direction: column;
-				justify-content: center;
+				justify-content: space-evenly;
 				align-items: center;
 			}
-			p {
-				height: 100px;
+			div {
+				height: 300px;
 				width: 500px;
 				background-color: #414141;
 				display: flex;
-				justify-content: center;
+				flex-direction: column;
+				justify-content: space-evenly;
 				align-items: center;
 				font-size: 30px;
 				color: bisque;
 			}
-			#btn {
+			button {
 				padding: 10px 30px;
 				color: aliceblue;
 				background-color: rgb(58, 58, 171);
@@ -35,12 +36,16 @@
 	</head>
 	<body>
 		<h1>Learning Event Listner</h1>
-		<p id="js">Event Listner</p>
+		<div>
+			<p id="js">Event Listner</p>
+			<input type="text" id="name" value="Enter Name" />
+			<p id="inputPara"></p>
+		</div>
 		<button id="btn">Try</button>
 		<script>
 			// Click
-			document.addEventListener("click", clcik);
-			function clcik() {
+			document.addEventListener("click", click);
+			function click() {
 				document.getElementById("js").innerText = " Mouse Clicked";
 			}
 
@@ -50,7 +55,9 @@
 			});
 
 			// input
-
+			document.addEventListener("input", (input) => {
+				document.getElementById("inputPara").innerText = "Input value changed";
+			});
 			/*
 			         -
 			         - keydown
