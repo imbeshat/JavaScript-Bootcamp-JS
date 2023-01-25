@@ -1,0 +1,22 @@
+body {
+	height: 100vh;
+	overflow: hidden;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+button {
+	padding: 25px;
+	font-size: 25px;
+	border-radius: 25px;
+	background-color: #f853fd;
+	cursor: pointer;
+	border: none;
+	box-shadow: 0 9px #f40cfc;
+}
+
+button:active {
+	background-color: #f331fa;
+	box-shadow: 0 5px #f40cfc;
+	transform: translateY(4px);
+}
