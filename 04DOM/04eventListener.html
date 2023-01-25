@@ -38,8 +38,9 @@
 		<h1>Learning Event Listner</h1>
 		<div>
 			<p id="js">Event Listner</p>
-			<input type="text" id="name" value="Enter Name" />
+			<input type="text" id="name" placeholder="Enter Something" />
 			<p id="inputPara"></p>
+			<p id="loadPara"></p>
 		</div>
 		<button id="btn">Try</button>
 		<script>
@@ -68,11 +69,20 @@
 			document.addEventListener("keyup", (keyup) => {
 				document.getElementById("name").style.backgroundColor = "white";
 			});
+
+			// load
+			window.addEventListener("load", (load) => {
+				window.setTimeout(() => {
+					document.getElementById("loadPara").innerText = "Page is fully loaded";
+				}, 2000);
+			});
+
+			// keypress - It is deprecated. Instead of this keydown event is used.
 			/*
 			         -
 			         - 
-			         - keypress
-			         - onload
+			         - 
+			         - 
 			         */
 			// mouseeneter
 			document.addEventListener("mouseenter", mouseenter);
