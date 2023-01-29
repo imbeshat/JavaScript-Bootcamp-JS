@@ -66,7 +66,6 @@
 // console.log(isSome);
 
 // sort
-
 const array = [1, 30, 39, 29, 10, 13];
 const Sort = array.sort();
 console.log(Sort);
