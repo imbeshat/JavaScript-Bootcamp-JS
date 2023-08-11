@@ -16,5 +16,5 @@ var greetMe = function () {
 
 // Anonymous Function - A function without a name. It is used in the function expression. It is used when we don't want to reuse the function again. It does not have their own identity. Anonymous functions are used in a place where functions are used as values.
 const a = function () {
-	console.log("a");
+	//Statements
 };
