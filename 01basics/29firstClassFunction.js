@@ -18,3 +18,10 @@ var greetMe = function () {
 const a = function () {
 	//Statements
 };
+
+// Named Function Expression - A function expression which has a name. It is used when we want to reuse the function again. It has its own identity. It is used in the recursion.
+const b = function xyz() {
+	//Statements
+};
+xyz(); // This will throw an error as xyz is not defined. xyz is only accessible inside the function. It is not accessible outside the function.
+b(); // This will work as b is accessible outside the function.
