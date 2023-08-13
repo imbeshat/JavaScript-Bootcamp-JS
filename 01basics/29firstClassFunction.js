@@ -25,3 +25,11 @@ const b = function xyz() {
 };
 xyz(); // This will throw an error as xyz is not defined. xyz is only accessible inside the function. It is not accessible outside the function.
 b(); // This will work as b is accessible outside the function.
+
+// First Class Functions 0r First Class Citizens - A function which can be treated as a value. It can be passed as an argument to another function. It can be returned from another function. It can be assigned to a variable. It can be stored in a data structure like an array or an object.
+var c = function (param1) {
+	return function xyz() {
+		console.log(param1);
+	};
+};
+console.log(c()); // This will print the function definition
