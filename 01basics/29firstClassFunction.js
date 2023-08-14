@@ -33,3 +33,5 @@ var c = function (param1) {
 	};
 };
 console.log(c()); // This will print the function definition
+
+// Array functions - These function expression, function statements can be created using arrow function
