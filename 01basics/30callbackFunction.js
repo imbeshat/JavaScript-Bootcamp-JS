@@ -11,3 +11,9 @@ function x(y) {
 x(function y() {
 	console.log("y");
 });
+
+// Event Listener foir callback function
+document.getElementById("clickMe").addEventListener("click", function xyz() {
+	console.log("Button Clicked");
+});
+// Here function xyz is a callback function. It is called when the button is clicked and is pushed in the callstack and is executed.
